@@ -5,27 +5,28 @@ body{
 
 .corpo-calculadora{
     width: 300px;
-    height: 500px;
+    height: 570px;
     background-color: rgb(104, 96, 117);
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: auto;
 }
 #tela-resultado{
     background-color: rgb(183, 204, 202);
     border-radius: 20px;
     height: 200px;
-    width: 295px;
+    width: 90%;
     border: 1px solid black;
+    margin: 20px auto;
 }
 button{
-    width: 50px;
+    width: 23%;
     height: 50px;
     text-align: center;
+    border-radius: 10px;
 }
 .btnEsquerdo{
     align-items: left;
-
 }
