@@ -5,7 +5,7 @@
 body {
     background-color: rgb(96, 96, 101);
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,10 +46,6 @@ button {
     border-radius: 10px;
     margin: 2px auto;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.776);
-}
-
-button:hover{
-    background-color: rgb(171, 193, 242);
 }
 
 button:active{
