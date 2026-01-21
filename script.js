@@ -24,48 +24,6 @@ function limpar() {
 function calcular() {
     try {
 
-        if (expressao === "22+10" || expressao === "10+22") {
-            tela.value = "Nosso primeiro beijo!";
-            tela.style.fontSize = "30px";
-            expressao = "0";
-            return;
-        }
-
-        if (expressao === "17+10" || expressao === "10+17") {
-            tela.value = "Nosso primeiro encontro!";
-            tela.style.fontSize = "24px";
-            expressao = "0";
-            return;
-        }
-
-        if (expressao === "1+9" || expressao === "01+9") {
-            tela.value = "Nossa primeira conversa!";
-            tela.style.fontSize = "24px";
-            expressao = "0";
-            return;
-        }
-
-        if (expressao === "5+5" || expressao === "05+05") {
-            tela.value = "Namoramos!";
-            tela.style.fontSize = "40px";
-            expressao = "0";
-            return;
-        }
-
-        if (expressao === "5+5" || expressao === "05+05") {
-            tela.value = "Namoramos!";
-            tela.style.fontSize = "40px";
-            expressao = "0";
-            return;
-        }
-
-        if (expressao === "3+4" || expressao === "03+04") {
-            tela.value = "Casamossss!";
-            tela.style.fontSize = "40px";
-            expressao = "0";
-            return;
-        }
-
         let resultado = eval(expressao);
         expressao = resultado.toString();
 

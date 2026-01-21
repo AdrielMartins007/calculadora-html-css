@@ -3,28 +3,31 @@
 }
 
 body {
-    background-color: rgb(136, 136, 161);
+    background-color: rgb(96, 96, 101);
     margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(imagens/montain-blue.jpg);
+    background-position: center center;
 }
 
 .corpo-calculadora {
     width: 90%;
     max-width: 320px;
     height: auto;
-    background-color: rgb(104, 96, 117);
+    background-color: rgba(36, 25, 78, 0.524);
     align-items: center;
     text-align: center;
     border-radius: 20px;
     border: 2px solid black;
     padding: 15px;
+    box-shadow: 0px 0px 10px black;
 }
 
 #tela-resultado {
-    background-color: rgb(183, 204, 202);
+    background-color: rgba(183, 204, 202, 0.617);
     border-radius: 20px;
     height: 140px;
     width: 100%;
@@ -32,14 +35,25 @@ body {
     margin: 20px auto;
     font-size: 45px;
     text-align: right;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.723);
 }
 
 button {
+    background-color: rgb(208, 208, 223);
     width: 23%;
     height: 50px;
     text-align: center;
     border-radius: 10px;
     margin: 2px auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.776);
+}
+
+button:hover{
+    background-color: rgb(171, 193, 242);
+}
+
+button:active{
+    background-color: rgb(134, 134, 139);
 }
 
 .btnEsquerdo {
