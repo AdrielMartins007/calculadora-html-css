@@ -4,53 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="corpo-calculadora">
-        <input type="text" id="tela-resultado" readonly>
+    <main>
 
-        <div class="btnFuncoes">
-            <button style="font-size: 18px;" onclick="adicionar('%')">%</button>
-            <button style="font-size: 16px;" onclick="limpar()">C</button>
-            <button style="font-size: 16px;" onclick="apagar()">⌫</button>
-            <button class="btnEsquerdo" onclick="adicionar('/')">➗</button>
+        <div>
+            <input id="tela" type="text" placeholder="0">
         </div>
 
-        <div class="segunda-fileira-num">
-            <button style="font-size: 18px;" onclick="adicionar(7)">7</button>
-            <button style="font-size: 18px;" onclick="adicionar('8')">8</button>
-            <button style="font-size: 18px;" onclick="adicionar('9')">9</button>
-            <button class="btnEsquerdo" onclick="adicionar('-')">➖</button>
+        <div class="botoes">
+            <button onclick="adicionar(7)">7</button>
+            <button onclick="adicionar(8)">8</button>
+            <button onclick="adicionar(9)">9</button>
+            <button onclick="adicionar('/')">/</button>
         </div>
 
-        <div class="segunda-fileira-num">
-            <button style="font-size: 18px;" onclick="adicionar('4')">4</button>
-            <button style="font-size: 18px;" onclick="adicionar('5')">5</button>
-            <button style="font-size: 18px;" onclick="adicionar('6')">6</button>
-            <button class="btnEsquerdo" onclick="adicionar('*')">✖️</button>
+        <div class="botoes">
+            <button onclick="adicionar(4)">4</button>
+            <button onclick="adicionar(5)">5</button>
+            <button onclick="adicionar(6)">6</button>
+            <button onclick="adicionar('*')">*</button>
         </div>
 
-        <div class="segunda-fileira-num">
-            <button style="font-size: 18px;" onclick="adicionar('1')">1</button>
-            <button style="font-size: 18px;" onclick="adicionar('2')">2</button>
-            <button style="font-size: 18px;" onclick="adicionar('3')">3</button>
-            <button class="btnEsquerdo" onclick="adicionar('+')">➕</button>
-        </div>
-        <div class="segunda-fileira-num">
-            <button style="font-size: 18px;" onclick="adicionar(',')">,</button>
-            <button style="font-size: 18px;" onclick="adicionar('0')">0</button>
-            <button style="font-size: 18px;" onclick="adicionar('.')">.</button>
-            <button class="btnEsquerdo" style="font-size: 18px;" onclick="calcular()">=</button>
+        <div class="botoes">
+            <button onclick="adicionar(1)">1</button>
+            <button onclick="adicionar(2)">2</button>
+            <button onclick="adicionar(3)">3</button>
+            <button onclick="adicionar('-')">-</button>
         </div>
 
-    </div>
+        <div class="botoes">
+            <button onclick="limpar()">C</button>
+            <button onclick="adicionar(0)">0</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="adicionar('+')">+</button>
+        </div>
+
+        <footer>
+            &copy; <a href="https://github.com/AdrielMartins007" target="_blank">Adriel Martins - 2026</a>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
-
-<script src="script.js"></script>
 
 </html>

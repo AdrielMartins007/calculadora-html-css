@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -13,10 +14,10 @@ body {
     background-position: center center;
 }
 
-.corpo-calculadora {
+main {
     width: 90%;
-    max-width: 320px;
-    height: auto;
+    max-width: 400px;
+    height: 89vh;
     background-color: rgba(36, 25, 78, 0.524);
     align-items: center;
     text-align: center;
@@ -26,47 +27,69 @@ body {
     box-shadow: 0px 0px 10px black;
 }
 
-#tela-resultado {
+main #tela {
     background-color: rgba(183, 204, 202, 0.617);
     border-radius: 20px;
-    height: 140px;
+    height: 170px;
     width: 100%;
     border: 2px solid black;
     margin: 20px auto;
-    font-size: 45px;
+    font-size: 60px;
     text-align: right;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.723);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.723);
+}
+
+#tela::placeholder {
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 button {
-    background-color: rgb(208, 208, 223);
-    width: 23%;
-    height: 50px;
-    text-align: center;
+    background-color: white;
+    width: 25%;
+    height: 70px;
     border-radius: 10px;
-    margin: 2px auto;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.776);
+    margin: 2px;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-button:active{
-    background-color: rgb(134, 134, 139);
+button:hover {
+    background-color: rgba(173, 186, 221, 0.758);
 }
 
-.btnEsquerdo {
-    align-items: left;
+button:active {
+    background-color: rgb(158, 222, 156);
 }
 
-@media (max-width: 400px) {
-    .corpo-calculadora {
-        max-width: 95%;
+footer{
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    main {
+        max-width: 70vh;
+        height: 85vh;
     }
 
     button {
-        height: 50px;
-        font-size: 1rem;
+        height: 80px;
+        font-size: 2rem;
     }
 
-    #tela-resultado {
-        height: 120px;
+    main #tela {
+        height: 230px;
     }
 }

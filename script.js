@@ -1,47 +1,21 @@
-let tela = document.getElementById("tela-resultado");
-let expressao = "0";
+var input = document.querySelector('input')
 
-tela.value = "0";
-tela.style.fontSize = "50px";
+function adicionar(num) {
 
-function adicionar(valor) {
-    if (expressao === "0") {
-        expressao = valor;
-    } else {
-        expressao += valor;
-    }
+    input.value += num
 
-    tela.style.fontSize = "50px";
-    tela.value = expressao;
 }
 
 function limpar() {
-    expressao = "0";
-    tela.style.fontSize = "50px";
-    tela.value = "0";
+
+    input.value = ""
+
 }
 
-function calcular() {
-    try {
+function calcular(){
 
-        let resultado = eval(expressao);
-        expressao = resultado.toString();
+    var resultado = eval(input.value) /* 'EVAL' para calular todos os itens dentro do input.value */
 
-        tela.style.fontSize = "50px";
-        tela.value = expressao;
+    input.value = resultado
 
-    } catch {
-        tela.value = "Erro";
-        expressao = "0";
-    }
-}
-
-function apagar() {
-    if (expressao.length > 1) {
-        expressao = expressao.slice(0, -1);
-    } else {
-        expressao = "0";
-    }
-
-    tela.value = expressao;
 }
